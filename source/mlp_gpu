@@ -1,0 +1,3 @@
+#!/bin/bash
+
+./preprocessing/convert.py $2 "-" | ./cuda/Release/mlp --training_data "-" "${@:3}"
